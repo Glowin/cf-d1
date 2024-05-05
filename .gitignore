@@ -25,3 +25,5 @@ pnpm-debug.log*
 
 # cloudflare 数据库配置
 .wrangler
+
+migrations

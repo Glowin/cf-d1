@@ -1,0 +1,14 @@
+node_compat = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "d1-demo-prod-db"
+database_id = "b8a8a4ff-6620-485d-9a6f-4d8dbeb40325"
+preview_database_id = "DB"
+
+[env.preview]
+name = "preview"
+[[env.preview.d1_databases]]
+binding = "DB"
+database_name = "d1-demo-preview-db"
+database_id = "bcf635d8-038b-4be9-b867-a541c8cbe2a2"
