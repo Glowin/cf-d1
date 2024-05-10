@@ -4,6 +4,7 @@ import { drizzle } from "drizzle-orm/d1";
 import { linkShare } from "../schema";
 
 const db = drizzle(Astro.locals.runtime.env.DB);
+
 const links = await db
 	.select()
 	.from(linkShare)
@@ -21,9 +22,11 @@ const links = await db
 	<body>
 		<h1>Shared links</h1>
 		<ul>
-			{links.map((link) => (
-				<li><a href={link.url}>{link.title}</a></li>
-			))}
+			{
+				links.map((link) => (
+					<li><a href={link.url}>{link.title}</a></li>
+				))
+			}
 		</ul>
 
 	</body>
