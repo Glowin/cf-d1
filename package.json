@@ -17,9 +17,9 @@
     "db:studio:prod": "drizzle-kit studio"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.10",
-    "@astrojs/cloudflare": "^10.2.4",
-    "astro": "^4.7.1",
+    "@astrojs/check": "^0.6.0",
+    "@astrojs/cloudflare": "^10.2.5",
+    "astro": "^4.8.2",
     "drizzle-orm": "^0.30.10",
     "typescript": "^5.4.5"
   },
